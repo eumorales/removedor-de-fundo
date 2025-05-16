@@ -7,7 +7,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Removedor de fundo | gilbertomorales.",
+  title: "Removedor de fundo | gilbertomorales.com",
   description: "Imagens limpas e prontas em um clique!",
 }
 
