@@ -5,12 +5,11 @@ import { PerspectiveGrid } from "@/components/perspective-grid"
 export default function Home() {
   return (
     <main className="min-h-screen bg-white relative">
-      {/* Background de grade em perspectiva */}
+
       <div className="absolute inset-0" style={{ height: "60vh", zIndex: 0, overflow: "hidden" }}>
         <PerspectiveGrid />
       </div>
 
-      {/* Conteúdo principal */}
       <div
         className="relative min-h-screen flex flex-col items-center justify-center px-4 py-6 sm:py-0"
         style={{ zIndex: 1 }}
@@ -24,13 +23,11 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Background Remover Component */}
         <div className="w-full max-w-3xl mx-auto">
           <BackgroundRemover />
         </div>
       </div>
 
-      {/* Footer */}
       <footer
         className="py-6 sm:py-8 flex items-center justify-center space-x-4 text-xs sm:text-sm text-gray-500 relative"
         style={{ zIndex: 1 }}

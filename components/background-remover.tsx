@@ -82,7 +82,7 @@ export default function BackgroundRemover() {
 
     const link = document.createElement("a")
     link.href = processedImage
-    link.download = "imagem-sem-fundo.png"
+    link.download = "imagem-gilbertomorales.png"
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -123,7 +123,7 @@ export default function BackgroundRemover() {
                 <ImageIcon className="w-10 h-10 sm:w-12 sm:h-12 text-gray-400 mb-3 sm:mb-4" />
               </div>
               <p className="text-sm sm:text-base text-gray-600 mb-4 text-center">
-                É fácil! Arraste sua imagem ou clique para enviar.
+                É fácil! Escolha sua imagem e clique para enviar.
               </p>
               <div className="transition-transform duration-300 hover:scale-105">
                 <Button

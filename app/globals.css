@@ -13,7 +13,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 142 76% 36%; /* Verde como cor primária */
+    --primary: 142 76% 36%; 
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -22,7 +22,7 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 142 76% 36%; /* Verde como cor de destaque */
+    --accent: 142 76% 36%; 
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -30,7 +30,6 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 142 76% 36%; /* Verde para o anel de foco */
 
     --radius: 0.5rem;
   }
@@ -74,24 +73,21 @@
     @apply bg-background text-foreground;
   }
 
-  /* Melhorias para dispositivos móveis */
   @media (max-width: 640px) {
     html {
-      font-size: 14px; /* Tamanho de fonte ligeiramente menor em dispositivos móveis */
+      font-size: 14px; 
     }
 
-    /* Melhorar área de toque para elementos interativos */
     button,
     [role="button"],
     input[type="button"],
     input[type="submit"],
     input[type="reset"] {
-      min-height: 44px; /* Altura mínima recomendada para áreas de toque */
-      touch-action: manipulation; /* Melhora a resposta ao toque */
+      min-height: 44px; 
+      touch-action: manipulation; 
     }
   }
 
-  /* Desativar efeitos de hover em dispositivos touch */
   @media (hover: none) {
     .hover\:scale-105,
     .hover\:scale-110,
@@ -101,7 +97,6 @@
   }
 }
 
-/* Animações personalizadas */
 @layer utilities {
   .animate-fade-in {
     animation: fadeIn 1s ease-in-out;
@@ -124,7 +119,6 @@
     animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
 
-  /* Utilitários responsivos adicionais */
   .touch-manipulation {
     touch-action: manipulation;
   }
@@ -172,12 +166,10 @@
   }
 }
 
-/* Transições suaves para todos os elementos */
 * {
   transition: all 0.2s ease-in-out;
 }
 
-/* Estilo para a barra de carregamento animada */
 @keyframes shimmer {
   0% {
     background-position: -200% 0;
@@ -215,7 +207,6 @@
   }
 }
 
-/* Padrão de grade para indicar transparência na imagem processada */
 .bg-grid-pattern {
   background-image: linear-gradient(45deg, #f0f0f0 25%, transparent 25%),
     linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #f0f0f0 75%),
@@ -225,7 +216,6 @@
   background-color: white;
 }
 
-/* Grade em perspectiva 3D (mesh) */
 .perspective-grid {
   background-color: white;
   position: relative;
@@ -247,9 +237,8 @@
   transform-origin: center center;
 }
 
-/* Ajustes para dispositivos móveis */
 @media (max-width: 640px) {
   .bg-grid-pattern {
-    background-size: 15px 15px; /* Grade menor em dispositivos móveis */
+    background-size: 15px 15px; 
   }
 }
